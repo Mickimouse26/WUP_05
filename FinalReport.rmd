@@ -38,9 +38,17 @@ barchartGC(~infected + treatment,data=triUmpF)
 barchartGC(~infected + treatment,data=triUmpF, type="percent")
 
 ```
+The graph chart above shows that even with the vaccine for AIDs the women would still be likely to contract the virus anyway.
+
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+```{r}
+table1 <- xtabs(~infected + treatment,data=triUmpF)
+rowPerc(table1)
+colPerc(table1)
+```
 
 ## Inferential Results
 
