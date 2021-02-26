@@ -1,5 +1,5 @@
 ---
-title: "Aides Drug"
+title: "Aids Drug"
 author: "Michelle Coleman"
 date: "February 24, 2021"
 output: html_document
@@ -49,6 +49,8 @@ table1 <- xtabs(~infected + treatment,data=triUmpF)
 rowPerc(table1)
 colPerc(table1)
 ```
+
+The women that contracted AIDS, 59% got the vaccine and 41% got the placebo.
 
 ## Inferential Results
 
